@@ -1,0 +1,119 @@
+header{
+    background-color: #3EBFFF;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 160px;
+}
+
+.nav-links{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.nav-links a{
+    padding: 10px;
+}
+
+.nav-links a:hover{
+    font-weight: 600;
+    padding: 9.5px;
+}
+
+.nav-links > li:nth-child(4) a{
+    background-color: var(--c-0);
+    padding: 16px 32px;
+    border-radius: 28px;
+    border: 1px solid var(--c-0);
+    transition: 0.4s;
+    display: block;
+}
+
+.nav-links > li:nth-child(4) a:hover{
+    background-color: transparent;
+    color: var(--c-0);
+}
+
+.menu-mobile{
+    width: 46px;
+    height: 30px;
+    display: none;
+    flex-direction: column;
+    gap: 8px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.line{
+    width: 100%;
+    height: calc(33% - 4px);
+    background-color: var(--c-0);
+    border-radius: 4px;
+}
+
+.backshadow{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+}
+
+@media (max-width: 900px){
+    .header-nav{
+        background-color: var(--footer);
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        height: 100vh;
+        padding-top: 160px;
+        visibility: hidden;
+        width: 0px;
+        overflow: hidden;
+        transition: 0.4s;
+    }
+
+    .header-nav.active{
+        width: 220px;
+        padding: 160px 20px 20px 20px;
+        visibility: visible;
+    }
+
+    .nav-links{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-mobile{
+        display: flex;
+        position: absolute;
+        right: 40px;
+    }
+
+    .menu-mobile.active .line:nth-child(2){
+        display: none;
+    }
+
+    .menu-mobile.active .line:nth-child(1),
+    .menu-mobile.active .line:nth-child(3){
+        position: absolute;
+        rotate: 45deg;
+        top: 14px;
+    }
+
+    .menu-mobile.active .line:nth-child(3){
+        rotate: -45deg;
+    }
+
+    .backshadow.active{
+        visibility: visible;
+    }
+}

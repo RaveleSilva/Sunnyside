@@ -6,17 +6,18 @@
     font: normal 18px/1.4 'Barlow', sans-serif;
 }
 
-.font-1b,
-.font-1b-upper{
+.font-1b{
     font: 700 18px/1.4 'Fraunces', serif;
 }
 
-.font-1b-upper{
-    text-transform: uppercase;
+.font-3,
+.font-3b-upper{
+    font: 400 18px/1.4 'Barlow', sans-serif;
 }
 
-.font-3{
-    font: normal 20px/1.4 'Barlow', sans-serif;
+.font-3b-upper{
+    text-transform: uppercase;
+    font-family: 'Fraunces', serif;
 }
 
 .font-4{
