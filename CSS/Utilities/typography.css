@@ -1,0 +1,36 @@
+.font-0{
+    font: normal 12px/1.4 'Barlow', sans-serif;
+}
+
+.font-1{
+    font: normal 18px/1.4 'Barlow', sans-serif;
+}
+
+.font-1b,
+.font-1b-upper{
+    font: 700 18px/1.4 'Fraunces', serif;
+}
+
+.font-1b-upper{
+    text-transform: uppercase;
+}
+
+.font-3{
+    font: normal 20px/1.4 'Barlow', sans-serif;
+}
+
+.font-4{
+    font: 700 24px/1.4 'Fraunces', serif;
+}
+
+.font-5{
+    font: 700 32px/1.2 'Fraunces', sans-serif;
+}
+
+.font-6{
+    font: 900 40px/1.1 'Fraunces', sans-serif;
+}
+
+.font-7{
+    font: normal 60px/1.1 'Fraunces', sans-serif;
+}
