@@ -6,7 +6,7 @@ main{
 .home-intro{
     grid-column: 1 / -1;
     height: 85vh;
-    background-image: url(./images/desktop/image-header.jpg);
+    background-image: url(../images/desktop/image-header.jpg);
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -114,14 +114,14 @@ main .section-text:nth-child(odd) a::after{
 
 .text-background:nth-child(6),
 .text-background:nth-child(7){
-    background-image: url(/images/desktop/image-graphic-design.jpg);
+    background-image: url(../images/desktop/image-graphic-design.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .text-background:nth-child(7){
-    background-image: url(/images/desktop/image-photography.jpg);
+    background-image: url(../images/desktop/image-photography.jpg);
 }
 
 .testimonials{
