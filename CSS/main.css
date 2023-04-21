@@ -124,80 +124,11 @@ main .section-text:nth-child(odd) a::after{
     background-image: url(../images/desktop/image-photography.jpg);
 }
 
-.testimonials{
-    text-align: center;
-    padding: 140px 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.testimonials h1{
-    letter-spacing: 4px;
-    margin-bottom: 70px;
-}
-
-.testimonials-container{
-    display: flex;
-    gap: 40px;
-}
-
-.testimonials-card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-width: 40ch;
-}
-
-.testimonials-card p{
-    margin-bottom: 52px;
-}
-
-.testimonials-card span + span{
-    margin-top: 1rem;
-}
-
-.testimonials img{
-    width: 60px;
-    border-radius: 50%;
-    margin-bottom: 52px;
-}
-
 .gallery{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
 }
 
-footer{
-    padding: 80px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footer-logo{
-    width: 160px;
-    margin-bottom: 40px;
-}
-
-.footer-links{
-    display: flex;
-    gap: 52px;
-    margin-bottom: 60px;
-}
-
-.footer-links a{
-    padding-bottom: 4px;
-}
-
-.footer-links a:hover{
-    border-bottom: 2px solid hsl(168, 38%, 37%);
-}
-
-.footer-social{
-    display: flex;
-    gap: 30px
-}
 
 @media (max-width: 900px){
     main{
@@ -213,20 +144,6 @@ footer{
 
     .section-image:nth-child(odd){
         order: -1;
-    }
-
-    .testimonials{
-        padding: 70px 20px;
-    }
-
-    .testimonials-container{
-        flex-direction: column;
-        row-gap: 68px;
-    }
-
-    .testimonials-card img,
-    .testimonials-card p{
-        margin-bottom: 26px;
     }
 
     .gallery{

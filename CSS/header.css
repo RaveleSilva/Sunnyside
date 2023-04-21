@@ -70,6 +70,10 @@ header{
 }
 
 @media (max-width: 900px){
+    header{
+        padding: 20px;
+    }
+    
     .header-nav{
         background-color: var(--c-4);
         position: fixed;
