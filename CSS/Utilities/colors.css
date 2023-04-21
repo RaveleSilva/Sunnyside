@@ -5,8 +5,9 @@
     --c-3: hsl(213, 9%, 39%);
     --c-4: hsl(212, 27%, 19%);
 
-    --footer: hsl(168, 34%, 41%);
+    --footer: #90D4C5;
     --graphic: hsl(167, 40%, 24%);
+    --c-p3: hsl(168, 34%, 41%);
     --photography: hsl(198, 62%, 26%);
     --c-p1: hsl(51, 100%, 49%);
     --c-p2: hsl(7, 99%, 70%);
@@ -21,12 +22,24 @@
     background-color: var(--footer);
 }
 
+.c-graphic{
+    color: var(--graphic);
+}
+
+.c-photography{
+    color: var(--photography);
+}
+
 .c-p1{
     color:var(--c-p1);
 }
 
 .c-p2{
     color:var(--c-p2);
+}
+
+.c-p3{
+    color: var(--c-p3);
 }
 
 .c-0{

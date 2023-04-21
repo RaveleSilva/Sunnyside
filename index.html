@@ -13,13 +13,13 @@
 
     <title>Sunnyside Agency</title>
 </head>
-<body>
+<body class="body-bg">
     <header class="container">
         <div class="backshadow"></div>
 
         <a href="#" class="logo"><img src="images/logo.svg" alt="Sunnyside logo" width="124" height="24"></a>
 
-        <nav class="header-nav" aria-label="Primary Navegation">
+        <nav class="header-nav" aria-label="Primary Navigation">
             <ul class="nav-links">
                 <li><a href="#" class="font-3 c-0">About</a></li>
                 <li><a href="#" class="font-3 c-0">Services</a></li>
@@ -34,6 +34,106 @@
         </button>
     </header>
 
+    <main>
+        <div class="home-intro">
+            <h1 class="font-7 c-0">We are creatives</h1>
+            <img class="arrowdown" src="images/icon-arrow-down.svg" alt="">
+        </div>
+        <div class="section-text">
+            <h1 class="font-6 c-4">Transform your brand</h1>
+            <p class="font-1 c-2">We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p>
+            <a href="" class="font-4 c-4">Learn more</a>
+        </div>
+        <div class="section-image">
+            <picture>
+                <source media="(900px)" srcset="images/mobile/image-transform.jpg">
+                <img src="images/desktop/image-transform.jpg" alt="A white egg in a yellow bakground" width="720" height="600">
+            </picture>
+        </div>
+        <div class="section-image">
+            <picture>
+                <source media="(900px)" srcset="images/mobile/image-stand-out.jpg">
+                <img src="images/desktop/image-stand-out.jpg" alt="A pink cup in a pink background" width="720" height="600">
+            </picture>
+        </div>
+        <div class="section-text">
+            <h1 class="font-6 c-4">Stand out to the right audience</h1>
+            <p class="font-1 c-2">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p>
+            <a href="" class="font-4 c-4">Learn more</a>
+        </div>
+        <div class="text-background">
+            <h1 class="font-5 c-graphic">Graphic design</h1>
+            <p class="font-01 c-graphic">Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+        <div class="text-background">
+            <h1 class="font-5 c-photography">Photography</h1>
+            <p class="font-01 c-photography">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+    </main>
+
+    <section class="testimonials">
+        <h1 class="font-3b-upper c-1">client testimonials</h1>
+        <div class="testimonials-container">
+            <div class="testimonials-card">
+                <img src="images/image-emily.jpg" alt="Sunnyside employer picture" width="144" height="144">
+                <p class="font-01 c-3">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+                <span class="font-1b c-4">Emily R.</span>
+                <span class="font-0 c-1">Marketing Director</span>
+            </div>
+            <div class="testimonials-card">
+                <img src="images/image-thomas.jpg" alt="Sunnyside employer picture" width="144" height="144">
+                <p class="font-01 c-3">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+                <span class="font-1b c-4">Thomas S.</span>
+                <span class="font-0 c-1">Chief Operating Officer</span>
+            </div>
+            <div class="testimonials-card">
+                <img src="images/image-jennie.jpg" alt="Sunnyside employer picture" width="144" height="144">
+                <p class="font-01 c-3">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+                <span class="font-1b c-4">Jennie F.</span>
+                <span class="font-0 c-1">Business Owner</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <picture>
+            <source media="(max-width: 900px)" srcset="images/mobile/image-gallery-milkbottles.jpg" sizes="">
+            <img src="images/desktop/image-gallery-milkbottles.jpg" alt="Milk bottles in a sky background">
+        </picture>
+        <picture>
+            <source media="(max-width: 900px)" srcset="images/mobile/image-gallery-orange.jpg" sizes="">
+            <img src="images/desktop/image-gallery-orange.jpg" alt="Orange fruit inside a plate. orange background color on the back">
+        </picture>
+        <picture>
+            <source media="(max-width: 900px)" srcset="images/mobile/image-gallery-cone.jpg" sizes="">
+            <img src="images/desktop/image-gallery-cone.jpg" alt="|Icecream cone in blue background">
+        </picture>
+        <picture>
+            <source media="(max-width: 900px)" srcset="images/mobile/image-gallery-sugar-cubes.jpg" sizes="">
+            <img src="images/desktop/image-gallery-sugarcubes.jpg" alt="sugar cubes in pink background">
+        </picture>
+    </section>
+
+    <footer class="footer-bg">
+        <div class="footer-logo">
+            <a href="#"><img src="images/logo-footer.svg" alt="Sunnyside logo"></a>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+            <ul class="footer-links">
+                <li><a href="#" class="font-1 c-p3">About</a></li>
+                <li><a href="#" class="font-1 c-p3">Services</a></li>
+                <li><a href="#" class="font-1 c-p3">Projects</a></li>
+            </ul>
+        </nav>
+        <ul class="footer-social">
+            <li><a href="#"><img src="images/icon-facebook.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/icon-instagram.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/icon-twitter.svg" alt=""></a></li>
+            <li><a href="#"><img src="images/icon-pinterest.svg" alt=""></a></li>
+        </ul>
+    </footer>
+
     <script src="JavaScript/menu-mobile.js"></script>
+    <script src="JavaScript/arrow-animation.js"></script>
 </body>
 </html>

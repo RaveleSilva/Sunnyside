@@ -12,17 +12,18 @@ header{
 
 .nav-links{
     display: flex;
-    gap: 30px;
+    gap: 20px;
     align-items: center;
 }
 
 .nav-links a{
-    padding: 10px;
+    padding: 12px 24px;
+    border-radius: 20px;
+    transition: 0.4s;
 }
 
 .nav-links a:hover{
-    font-weight: 600;
-    padding: 9.5px;
+    background-color: #16b1ff;
 }
 
 .nav-links > li:nth-child(4) a{
@@ -44,7 +45,7 @@ header{
     height: 30px;
     display: none;
     flex-direction: column;
-    gap: 8px;
+    justify-content: space-between;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -52,24 +53,25 @@ header{
 
 .line{
     width: 100%;
-    height: calc(33% - 4px);
+    height: 3px;
     background-color: var(--c-0);
     border-radius: 4px;
 }
 
 .backshadow{
-    position: absolute;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     visibility: hidden;
+    z-index: 1;
 }
 
 @media (max-width: 900px){
     .header-nav{
-        background-color: var(--footer);
+        background-color: var(--c-4);
         position: fixed;
         top: 0px;
         right: 0px;
@@ -79,6 +81,7 @@ header{
         width: 0px;
         overflow: hidden;
         transition: 0.4s;
+        z-index: 1;
     }
 
     .header-nav.active{
@@ -89,13 +92,22 @@ header{
 
     .nav-links{
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
+    }
+
+    .nav-links a:hover{
+        background-color: hsl(212, 27%, 11%);
     }
 
     .menu-mobile{
         display: flex;
         position: absolute;
         right: 40px;
+        z-index: 1;
+    }
+
+    .menu-mobile.active{
+        position: fixed;
     }
 
     .menu-mobile.active .line:nth-child(2){
