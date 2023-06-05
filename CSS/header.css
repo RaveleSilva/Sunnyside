@@ -1,5 +1,8 @@
 header{
     background-color: #3EBFFF;
+}
+
+.header{
     padding: 40px;
     display: flex;
     align-items: center;
@@ -70,8 +73,8 @@ header{
 }
 
 @media (max-width: 900px){
-    header{
-        padding: 20px;
+    .header{
+        padding: 40px 20px;
     }
     
     .header-nav{
